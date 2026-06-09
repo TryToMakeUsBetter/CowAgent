@@ -521,7 +521,7 @@ def _notify_user(channel_type: str, receiver: str, summary: str) -> None:
         context["isgroup"] = False
         context["session_id"] = receiver
         # Channels that reply to an original message need msg=None for a fresh push.
-        if channel_type in ("feishu", "dingtalk", "wecom_bot", "qq"):
+        if channel_type in ("feishu", "dingtalk", "wecom_bot", "wecom_bot_callback", "qq"):
             context["msg"] = None
         if channel_type == "feishu":
             context["receive_id_type"] = "open_id"

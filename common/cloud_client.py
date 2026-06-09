@@ -41,6 +41,7 @@ CREDENTIAL_MAP = {
     "feishu":            ("feishu_app_id",          "feishu_app_secret"),
     "dingtalk":          ("dingtalk_client_id",      "dingtalk_client_secret"),
     "wecom_bot":         ("wecom_bot_id",            "wecom_bot_secret"),
+    "wecom_bot_callback": ("wecom_corp_id",          "wecom_bot_secret"),
     "qq":                ("qq_app_id",               "qq_app_secret"),
     "wechatmp":          ("wechatmp_app_id",         "wechatmp_app_secret"),
     "wechatmp_service":  ("wechatmp_app_id",         "wechatmp_app_secret"),

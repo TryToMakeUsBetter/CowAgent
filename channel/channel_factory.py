@@ -39,6 +39,9 @@ def create_channel(channel_type) -> Channel:
     elif channel_type == const.WECOM_BOT:
         from channel.wecom_bot.wecom_bot_channel import WecomBotChannel
         ch = WecomBotChannel()
+    elif channel_type == const.WECOM_BOT_CALLBACK:
+        from channel.wecom_bot_callback.wecom_bot_callback_channel import WecomBotCallbackChannel
+        ch = WecomBotCallbackChannel()
     elif channel_type == const.QQ:
         from channel.qq.qq_channel import QQChannel
         ch = QQChannel()

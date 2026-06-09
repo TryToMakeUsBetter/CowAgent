@@ -3007,12 +3007,24 @@ class ChannelsHandler:
             ],
         }),
         ("wecom_bot", {
-            "label": {"zh": "企微智能机器人", "en": "WeCom Bot"},
+            "label": {"zh": "企微智能机器人(长连接)", "en": "WeCom Bot (WS)"},
             "icon": "fa-robot",
             "color": "emerald",
             "fields": [
                 {"key": "wecom_bot_id", "label": "Bot ID", "type": "text"},
                 {"key": "wecom_bot_secret", "label": "Secret", "type": "secret"},
+            ],
+        }),
+        ("wecom_bot_callback", {
+            "label": {"zh": "企微智能机器人(回调)", "en": "WeCom Bot (Callback)"},
+            "icon": "fa-robot",
+            "color": "green",
+            "fields": [
+                {"key": "wecom_corp_id", "label": "Corp ID", "type": "text"},
+                {"key": "wecom_bot_secret", "label": "Secret", "type": "secret"},
+                {"key": "wecom_bot_token", "label": "Token", "type": "secret"},
+                {"key": "wecom_bot_encoding_aes_key", "label": "Encoding AES Key", "type": "secret"},
+                {"key": "wecom_bot_callback_port", "label": "Port", "type": "number", "default": 9892},
             ],
         }),
         ("qq", {

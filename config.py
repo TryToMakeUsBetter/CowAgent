@@ -180,6 +180,11 @@ available_setting = {
     # WeCom smart bot config (long connection mode)
     "wecom_bot_id": "",  # WeCom smart bot BotID
     "wecom_bot_secret": "",  # WeCom smart bot long-connection secret
+    # WeCom smart bot config (callback mode)
+    "wecom_corp_id": "",  # WeCom CorpID for callback URL verification
+    "wecom_bot_token": "",  # WeCom callback Token
+    "wecom_bot_encoding_aes_key": "",  # WeCom callback EncodingAESKey
+    "wecom_bot_callback_port": 9892,  # WeCom callback HTTP server port
     # Telegram config
     "telegram_token": "",  # Bot token from @BotFather
     "telegram_proxy": "",  # Optional HTTP/SOCKS5 proxy, e.g. http://127.0.0.1:7890 or socks5://127.0.0.1:1080 (empty falls back to env vars)
@@ -200,7 +205,7 @@ available_setting = {
     # custom trigger words for chatgpt commands
     "clear_memory_commands": ["#清除记忆"],  # session-reset command; must start with #
     # channel config
-    "channel_type": "",  # channel type; supports running multiple channels at once. Single: "feishu", multiple: "feishu, dingtalk" or ["feishu", "dingtalk"]. Options: web,feishu,dingtalk,wecom_bot,weixin,wechatmp,wechatmp_service,wechatcom_app,wechat_kf,telegram,slack,discord
+    "channel_type": "",  # channel type; supports running multiple channels at once. Single: "feishu", multiple: "feishu, dingtalk" or ["feishu", "dingtalk"]. Options: web,feishu,dingtalk,wecom_bot,wecom_bot_callback,weixin,wechatmp,wechatmp_service,wechatcom_app,wechat_kf,telegram,slack,discord
     "web_console": True,  # whether to auto-start the Web console (on by default). Set False to disable
     "subscribe_msg": "",  # subscribe message; supported by: wechatmp, wechatmp_service, wechatcom_app
     "debug": False,  # whether to enable debug mode; prints more logs when on

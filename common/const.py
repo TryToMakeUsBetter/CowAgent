@@ -240,6 +240,7 @@ MODEL_LIST = MODEL_LIST + GITEE_AI_MODEL_LIST + MODELSCOPE_MODEL_LIST
 FEISHU = "feishu"
 DINGTALK = "dingtalk"
 WECOM_BOT = "wecom_bot"
+WECOM_BOT_CALLBACK = "wecom_bot_callback"
 QQ = "qq"
 WEIXIN = "weixin"
 WECHAT_KF = "wechat_kf"
